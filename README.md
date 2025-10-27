@@ -1,92 +1,88 @@
 # Smart Car Health Monitor
 
-## Descriere
+## Description
 
-Smart Car Health Monitor este un sistem inteligent construit cu **Raspberry Pi** care monitorizează în timp real starea mașinii transmisa prin portul **OBD-II** și oferă notificări către șofer în caz de valori critice sau anomalii, dar si notificari cu privire la intretinerea acesteia. Sistemul crește siguranța și ajută la prevenirea defecțiunilor, oferind vizualizare live printr-un **dashboard web** sau aplicație mobilă.
-
----
-
-## Funcționalități
-
-- Citire date de la ECU prin OBD-II (temperatura motor, turație, tensiune baterie, viteza vehiculului etc.)
-- Monitorizare continuă a parametrilor critici
-- Alertare în timp real prin dashboard și notificări
-- Stocare valori istorice pentru analiză și detecție anomalii
-- Posibilitate de a detecta tipare anormale în comportamentul mașinii
+Smart Car Health Monitor is an intelligent system built with a **Raspberry Pi** that monitors the car's status in real time through **OBD-II** and provides notifications to the driver if critical values or anomalies are detected. It helps improve safety and prevent malfunctions, with live data visualization via a **web dashboard** or mobile app.
 
 ---
 
-## Componente
+## Features
+
+- Read data from the ECU via OBD-II (engine temperature, RPM, battery voltage, vehicle speed, etc.)
+- Continuous monitoring of critical parameters
+- Real-time alerts and notifications
+- Storage of historical data for trend analysis
+- Detection of abnormal patterns in vehicle behavior
+
+---
+
+## Components
 
 **Hardware:**
-- Raspberry Pi 4 (sau Pi 3B+/Pi Zero 2 W)  
-- Modul OBD-II USB/Bluetooth  
-- Breadboard și cabluri jumper  
-- Alimentator USB-C 5V/3A  
+- Raspberry Pi 4 (or Pi 3B+/Pi Zero 2 W)
+- OBD-II USB/Bluetooth module
+- Breadboard and jumper cables
+- USB-C 5V/3A power supply
 
 **Software:**
 - Python 3
-- Flask / Django pentru dashboard web
-- SQLite sau PostgreSQL pentru stocarea datelor
-- Biblioteci Python: `pyOBD`, `requests`, `pandas`, `matplotlib` (opțional pentru grafice)  
+- Flask or Django for web dashboard
+- SQLite or PostgreSQL for data storage
+- Python libraries: `pyOBD`, `requests`, `pandas`, `matplotlib` (optional for charts)
 
 ---
 
-## Arhitectura sistemului
+## System Architecture
 
 ```
-Mașină (ECU) --> Modul OBD-II --> Raspberry Pi --> Procesare date + detectie anomalii --> Dashboard Web / Notificări
+Car (ECU) --> OBD-II Module --> Raspberry Pi --> Data Processing + Anomaly Detection --> Web Dashboard / Notifications
 ```
 
-- **Raspberry Pi:** „Creierul” sistemului – colectează, procesează și stochează date.  
-- **Modul OBD-II:** „Ochii” – citește datele mașinii.  
-- **Dashboard:** „Fața” – afișează valorile, trendurile și alertele către utilizator.  
+- **Raspberry Pi:** central processor, collects and analyzes data.
+- **OBD-II Module:** reads data from the car.
+- **Dashboard:** displays data, trends, and alerts to the driver.
 
 ---
 
-## Instalare
+## Installation
 
-1. Clonați repository-ul:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/username/smart-car-health-monitor.git
 cd smart-car-health-monitor
 ```
 
-2. Instalați dependențele:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Conectați modulul OBD-II la Raspberry Pi.  
-4. Rulați serverul Flask/Django:
+3. Connect the OBD-II module to the Raspberry Pi.
+4. Run the server:
 
 ```bash
 python app.py
 ```
 
-5. Accesați dashboard-ul la `http://<IP_PI>:5000`  
+5. Access the dashboard at `http://<PI_IP>:5000`
 
 ---
 
-## Contribuții
+## Contribution
 
-Proiectul este open-source și binevenite contribuțiile!  
-- Deschideți un **issue** pentru bug-uri sau sugestii.  
-- Trimiteți **pull request-uri** pentru funcționalități noi sau îmbunătățiri.
+Contributions are welcome! Open an **issue** for bugs or suggestions, and submit **pull requests** for improvements or new features.
 
 ---
 
-## Licență
+## License
 
-Acest proiect este licențiat sub **MIT License**.  
-Datele OBD-II standard sunt utilizate legal fără licențe speciale.
+This project is licensed under the **MIT License**. Standard OBD-II data usage does not require special licenses.
 
 ---
 
 ## Contact
 
-Pentru întrebări sau colaborări:  
-- Email: example@email.com  
+- Email: example@email.com
 - GitHub: [username](https://github.com/username)
