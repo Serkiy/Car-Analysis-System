@@ -1,10 +1,8 @@
 # Smart Car Health Monitor
 
-![Project Banner](banner.png) <!-- Poți înlocui cu o imagine relevantă -->
-
 ## Descriere
 
-Smart Car Health Monitor este un sistem inteligent construit cu **Raspberry Pi** care monitorizează în timp real starea mașinii prin **OBD-II** și oferă notificări către șofer în caz de valori critice sau anomalii. Sistemul crește siguranța și ajută la prevenirea defecțiunilor, oferind vizualizare live printr-un **dashboard web** sau aplicație mobilă.
+Smart Car Health Monitor este un sistem inteligent construit cu **Raspberry Pi** care monitorizează în timp real starea mașinii transmisa prin portul **OBD-II** și oferă notificări către șofer în caz de valori critice sau anomalii, dar si notificari cu privire la intretinerea acesteia. Sistemul crește siguranța și ajută la prevenirea defecțiunilor, oferind vizualizare live printr-un **dashboard web** sau aplicație mobilă.
 
 ---
 
