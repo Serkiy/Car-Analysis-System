@@ -84,5 +84,5 @@ This project is licensed under the **MIT License**. Standard OBD-II data usage d
 
 ## Contact
 
-- Email: example@email.com
-- GitHub: [username](https://github.com/username)
+- Email: sergiu.nvk1315@email.com
+- GitHub: [Serkiy](https://github.com/Serkiy)
